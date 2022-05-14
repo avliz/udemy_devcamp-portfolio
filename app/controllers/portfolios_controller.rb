@@ -34,7 +34,7 @@ class PortfoliosController < ApplicationController
             format.json { render :show, status: :ok, location: @portfolios_path }
           else
             format.html { render :edit, status: :unprocessable_entity }
-            format.json { render json: @blog.errors, status: :unprocessable_entity }
+            format.json { render json: @portfolio_item.errors, status: :unprocessable_entity }
           end
         end
       end
