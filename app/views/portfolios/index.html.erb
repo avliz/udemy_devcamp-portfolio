@@ -4,6 +4,7 @@
 
 <!-- loop through all of the items and print to screen -->
 <% @portfolio_items.each do |portfolio_item| %>
+    <!-- portfolio_item.id: Rails automatically passes id so it is not needed -->
     <p><%= link_to portfolio_item.title, portfolio_path(portfolio_item.id) %></p>
     <p><%= portfolio_item.subtitle %></p>
     <p><%= portfolio_item.body %></p>
